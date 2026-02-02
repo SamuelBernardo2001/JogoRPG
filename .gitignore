@@ -1,8 +1,15 @@
+# ===============================
+# Maven / Spring Boot
+# ===============================
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# ===============================
+# IDEs
+# ===============================
 
 ### STS ###
 .apt_generated
@@ -32,7 +39,29 @@ build/
 ### VS Code ###
 .vscode/
 
-# Spring Boot - configs sensíveis
-application.properties
-application.yml
+# ===============================
+# Java
+# ===============================
+*.class
 
+# Logs
+*.log
+
+# Pacotes
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# ===============================
+# Spring Boot - configs sensíveis
+# ===============================
+src/main/resources/application.properties
+src/main/resources/application.yml
