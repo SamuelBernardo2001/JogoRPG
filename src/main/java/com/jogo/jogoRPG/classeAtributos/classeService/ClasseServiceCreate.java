@@ -11,6 +11,8 @@ public class ClasseServiceCreate {
         if (classe == null) {
             throw new IllegalArgumentException("A classe não pode ser nula.");}
 
+        if (classe.getNome() == null || classe.getNome().trim().isEmpty()) {
+            throw new IllegalArgumentException("O nome da classe não pode ser nulo ou vazio.");}
 
     }
 
