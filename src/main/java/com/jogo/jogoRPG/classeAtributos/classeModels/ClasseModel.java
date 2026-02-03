@@ -18,7 +18,7 @@ public class ClasseModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotBlank(message = "Nome é obrigatório")
     @Size(min = 6, message = "Nome deve ter no mínimo 6 caracteres")
