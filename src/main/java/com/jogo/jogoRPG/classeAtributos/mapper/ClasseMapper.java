@@ -1,6 +1,7 @@
 package com.jogo.jogoRPG.classeAtributos.mapper;
 
 import com.jogo.jogoRPG.classeAtributos.classeDTOS.ClasseCreateDTO;
+import com.jogo.jogoRPG.classeAtributos.classeDTOS.ClasseResponseDTO;
 import com.jogo.jogoRPG.classeAtributos.classeDTOS.ClasseUpdateDTO;
 import com.jogo.jogoRPG.classeAtributos.classeModels.ClasseModel;
 
@@ -21,4 +22,15 @@ public class ClasseMapper {
         model.setDescricao(update.descricao());
         model.setRank(update.rank());
     }
+
+    // Entity → DTO (RESPONSE)
+    public static ClasseResponseDTO toDTO(ClasseModel model){
+        return new ClasseResponseDTO(
+                model.getId(),
+                model.getNome(),
+                model.getDescricao(),
+                model.getRank()
+        );
+    }
+
 }
