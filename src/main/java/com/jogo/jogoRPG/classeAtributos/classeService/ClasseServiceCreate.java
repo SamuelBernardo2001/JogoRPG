@@ -19,6 +19,9 @@ public class ClasseServiceCreate {
 
         if (classe.getDescricao() == null || classe.getDescricao().trim().isEmpty()) {
             throw new IllegalArgumentException("A descrição da classe não pode ser nula ou vazia.");}
+
+        if (classe.getDescricao().length() < 10 || classe.getDescricao().length() > 100) {
+            throw new IllegalArgumentException("A descrição da classe deve ter entre 10 e 100 caracteres.");}
     }
 
 }
