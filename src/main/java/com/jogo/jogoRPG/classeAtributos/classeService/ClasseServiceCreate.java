@@ -14,6 +14,8 @@ public class ClasseServiceCreate {
         if (classe.getNome() == null || classe.getNome().trim().isEmpty()) {
             throw new IllegalArgumentException("O nome da classe não pode ser nulo ou vazio.");}
 
+        if (classe.getNome().length() < 5 || classe.getNome().length() > 15) {
+            throw new IllegalArgumentException("O nome da classe deve ter entre 5 e 15 caracteres.");}
     }
 
 }
