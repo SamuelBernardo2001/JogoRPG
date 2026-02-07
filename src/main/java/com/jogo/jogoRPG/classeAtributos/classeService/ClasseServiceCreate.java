@@ -23,7 +23,7 @@ public class ClasseServiceCreate {
         if (classe.getDescricao().length() < 10 || classe.getDescricao().length() > 100) {
             throw new IllegalArgumentException("A descrição da classe deve ter entre 10 e 100 caracteres.");}
 
-        if (classe.getRank() == null || classe.getRank().trim().isEmpty()) {
+        if (classe.getRankClasse() == null || classe.getRankClasse().trim().isEmpty()) {
             throw new IllegalArgumentException("O rank da classe não pode ser nulo ou vazio.");}
     }
 

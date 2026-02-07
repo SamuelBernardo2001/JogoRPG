@@ -32,6 +32,6 @@ public class ClasseModel {
 
     @NotBlank(message = "Rank é obrigatório")
     @Size(min = 1, message = "Rank deve ter no mínimo 1 caractere")
-    @Column(nullable = false)
-    private String rank;
+    @Column(name = "rankClasse", nullable = false)
+    private String rankClasse;
 }
