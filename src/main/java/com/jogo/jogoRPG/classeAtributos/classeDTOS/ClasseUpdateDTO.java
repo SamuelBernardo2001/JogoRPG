@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 public record ClasseUpdateDTO(
 
         @NotBlank(message = "Nome é obrigatório")
-        @Size(min = 6, message = "Nome deve ter no mínimo 6 caracteres")
+        @Size(min = 4, message = "Nome deve ter no mínimo 4 caracteres")
         String nome,
 
         @NotBlank(message = "Descrição é obrigatória")
@@ -15,5 +15,5 @@ public record ClasseUpdateDTO(
 
         @NotBlank(message = "Rank é obrigatório")
         @Size(min = 1, message = "Rank deve ter no mínimo 1 caractere")
-        String rank
+        String rankClasse
 ) {}

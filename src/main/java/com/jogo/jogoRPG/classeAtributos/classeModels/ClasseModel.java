@@ -21,7 +21,7 @@ public class ClasseModel {
     private Long id;
 
     @NotBlank(message = "Nome é obrigatório")
-    @Size(min = 6, message = "Nome deve ter no mínimo 6 caracteres")
+    @Size(min = 4, message = "Nome deve ter no mínimo 4 caracteres")
     @Column(nullable = false)
     private String nome;
 

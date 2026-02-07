@@ -12,7 +12,7 @@ public class ClasseMapper {
         ClasseModel classeModel = new ClasseModel();
         classeModel.setNome(create.nome());
         classeModel.setDescricao(create.descricao());
-        classeModel.setRankClasse(create.rank());
+        classeModel.setRankClasse(create.rankClasse());
         return classeModel;
     }
 
@@ -20,7 +20,7 @@ public class ClasseMapper {
     public static  void updateEntity(ClasseUpdateDTO update, ClasseModel model){
         model.setNome(update.nome());
         model.setDescricao(update.descricao());
-        model.setRankClasse(update.rank());
+        model.setRankClasse(update.rankClasse());
     }
 
     // Entity → DTO (RESPONSE)

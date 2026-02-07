@@ -4,5 +4,5 @@ public record ClasseResponseDTO(
         Long id,
         String nome,
         String descricao,
-        String rank
+        String rankClasse
 ) {}
